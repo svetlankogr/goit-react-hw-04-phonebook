@@ -1,0 +1,24 @@
+.form {
+  width: 400px;
+  margin-left: 15px;
+}
+
+.label {
+  font-size: 16px;
+}
+
+.input {
+  padding: 8px 12px;
+  width: 370px;
+  outline: transparent;
+  background: rgba(73, 72, 67, 0.1);
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+}
+
+.input:focus,
+.input:hover {
+  box-shadow: rgba(103, 162, 131, 0.605) 0px 7px 29px 0px;
+}

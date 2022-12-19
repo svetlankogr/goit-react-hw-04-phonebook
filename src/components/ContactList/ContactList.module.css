@@ -1,0 +1,27 @@
+.list {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 3px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: transparent;
+  background-color: rgb(220, 77, 69);
+  display: block;
+  font-size: 12px;
+  line-height: calc(17 / 14);
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+}
+
+.btn:hover {
+  box-shadow: rgba(108, 34, 9, 0.605) 0px 7px 29px 0px;
+}
