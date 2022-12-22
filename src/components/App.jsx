@@ -12,14 +12,13 @@ export class App extends Component {
 
   componentDidMount() {
     const contacts = localStorage.getItem('contacts');
-    const patsedContacts = JSON.parse(contacts);
-
-    if (patsedContacts) {
+    if (contacts) {
+      const patsedContacts = JSON.parse(contacts);
       this.setState({ contacts: patsedContacts });
     }
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(_, prevState) {
     const newContacts = this.state.contacts;
     const prevContacts = prevState.contacts;
 
